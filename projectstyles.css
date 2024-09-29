@@ -384,7 +384,7 @@ iframe {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: -1px;
     left: 0;
     background-color: var(--accent_color);
