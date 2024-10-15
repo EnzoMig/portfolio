@@ -525,7 +525,6 @@ iframe {
     display: flex;
     gap: 20px;
     max-width: var(--container-width);
-    /* column-width: 250px; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -533,26 +532,26 @@ iframe {
 .project-column {
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     gap: 20px;
-    max-width: 700px;
-    min-width: 200px
-    /* width: 100%; */
-    /* margin: 0 auto; */
 }
+
+@media screen and (max-width: 1000px) {
+    .project-column {
+      min-width: 400px;
+    }
+  }
+
 
 .project-img img {
     width: 100%;
-    /* height: 100%; */
-
     object-fit: cover;
 }
 
 .project-img {
     position: relative;
-    /* border: 5px solid black; */
 }
-
-
 
 .project-text {
     padding: 25px;
